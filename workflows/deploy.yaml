@@ -1,0 +1,20 @@
+name: Deploy to main
+
+on:
+  push:
+    branches:
+      -main
+Jobs:
+  deploy:
+  name: deploy to main 
+  runs-on: ubuntu-latest
+  environment:
+    name: maint
+  steps:
+    - name: checkout code
+      uses: actions/checkout@v3
+    - name: Setup env variable
+      run: echo "testing"
+
+
+  
