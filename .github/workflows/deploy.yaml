@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v3
+
       - name: Setup Environment Variables
         run: |
           echo "APP_ENV=staging" >> $GITHUB_ENV
@@ -19,6 +20,7 @@ jobs:
         run: |
           echo "Deploying to Staging"
           echo "APP_ENV=$APP_ENV"
+          echo "test=$GITHUB_ENV"
 
 
 
