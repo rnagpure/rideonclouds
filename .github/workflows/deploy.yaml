@@ -20,7 +20,7 @@ jobs:
         run: |
           echo "Deploying to Staging"
           echo "APP_ENV=$APP_ENV"
-          echo "test=$GITHUB_ENV"
+          echo "name=$MY_NAME"
 
 
 
