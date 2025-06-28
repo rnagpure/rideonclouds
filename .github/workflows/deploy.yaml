@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 jobs:
   deploy:
     name: deploy to main 
@@ -21,7 +22,6 @@ jobs:
           echo "Deploying to Staging"
           echo "APP_ENV=$APP_ENV"
           echo name: ${{ vars.MY_NAME }}
-
 
 
   
